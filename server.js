@@ -32,8 +32,6 @@ app.use('/api/auth', authRoutes);
 
 // DB + Server
 mongoose.connect('mongodb+srv://sivalakshmi26062006:sivalakshmi26062006@cluster0.narwqtl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/bail-app', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 }).then(() => {
   console.log('MongoDB connected');
   app.listen(5000, () => console.log('Server running on http://localhost:5000'));
